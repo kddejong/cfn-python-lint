@@ -29540,7 +29540,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluatelowsamplecountpercentile",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::CloudWatch::Alarm.EvaluateLowSampleCountPercentile"
+          }
         },
         "EvaluationPeriods": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluationperiods",
@@ -29580,7 +29583,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-namespace",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::CloudWatch::Alarm.Namespace"
+          }
         },
         "OKActions": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-okactions",
@@ -29615,7 +29621,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dynamic-threshold",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::CloudWatch::Alarm.ThresholdMetricId"
+          }
         },
         "TreatMissingData": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata",
@@ -41148,13 +41157,19 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-analysis.html#cfn-quicksight-analysis-analysisid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Analysis.AnalysisId"
+          }
         },
         "AwsAccountId": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-analysis.html#cfn-quicksight-analysis-awsaccountid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Analysis.AwsAccountId"
+          }
         },
         "Errors": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-analysis.html#cfn-quicksight-analysis-errors",
@@ -41167,7 +41182,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-analysis.html#cfn-quicksight-analysis-name",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Analysis.Name"
+          }
         },
         "Parameters": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-analysis.html#cfn-quicksight-analysis-parameters",
@@ -41227,13 +41245,19 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html#cfn-quicksight-dashboard-awsaccountid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Dashboard.AwsAccountId"
+          }
         },
         "DashboardId": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html#cfn-quicksight-dashboard-dashboardid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Dashboard.DashboardId"
+          }
         },
         "DashboardPublishOptions": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html#cfn-quicksight-dashboard-dashboardpublishoptions",
@@ -41245,7 +41269,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html#cfn-quicksight-dashboard-name",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Dashboard.Name"
+          }
         },
         "Parameters": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html#cfn-quicksight-dashboard-parameters",
@@ -41283,7 +41310,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-dashboard.html#cfn-quicksight-dashboard-versiondescription",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Dashboard.VersionDescription"
+          }
         }
       }
     },
@@ -41308,13 +41338,19 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-template.html#cfn-quicksight-template-awsaccountid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Template.AwsAccountId"
+          }
         },
         "Name": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-template.html#cfn-quicksight-template-name",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Template.Name"
+          }
         },
         "Permissions": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-template.html#cfn-quicksight-template-permissions",
@@ -41340,13 +41376,19 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-template.html#cfn-quicksight-template-templateid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Template.TemplateId"
+          }
         },
         "VersionDescription": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-template.html#cfn-quicksight-template-versiondescription",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Template.VersionDescription"
+          }
         }
       }
     },
@@ -41374,13 +41416,19 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html#cfn-quicksight-theme-awsaccountid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Theme.AwsAccountId"
+          }
         },
         "BaseThemeId": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html#cfn-quicksight-theme-basethemeid",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Theme.BaseThemeId"
+          }
         },
         "Configuration": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html#cfn-quicksight-theme-configuration",
@@ -41392,7 +41440,10 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html#cfn-quicksight-theme-name",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Theme.Name"
+          }
         },
         "Permissions": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html#cfn-quicksight-theme-permissions",
@@ -41412,13 +41463,19 @@
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html#cfn-quicksight-theme-themeid",
           "PrimitiveType": "String",
           "Required": true,
-          "UpdateType": "Immutable"
+          "UpdateType": "Immutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Theme.ThemeId"
+          }
         },
         "VersionDescription": {
           "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-quicksight-theme.html#cfn-quicksight-theme-versiondescription",
           "PrimitiveType": "String",
           "Required": false,
-          "UpdateType": "Mutable"
+          "UpdateType": "Mutable",
+          "Value": {
+            "ValueType": "AWS::QuickSight::Theme.VersionDescription"
+          }
         }
       }
     },
@@ -46234,6 +46291,8 @@
         "MYSQL",
         "MYSQL_SLOW_QUERY",
         "POSTGRESQL",
+        "ORACLE_ALERT",
+        "ORACLE_LISTENER",
         "IIS",
         "APPLICATION",
         "WINDOWS_EVENTS",
@@ -47207,6 +47266,30 @@
         "LessThanThreshold"
       ]
     },
+    "AWS::CloudWatch::Alarm.Dimension.Name": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::CloudWatch::Alarm.Dimension.Value": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::CloudWatch::Alarm.EvaluateLowSampleCountPercentile": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::CloudWatch::Alarm.Metric.MetricName": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::CloudWatch::Alarm.Metric.Namespace": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::CloudWatch::Alarm.Namespace": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
     "AWS::CloudWatch::Alarm.Statistic": {
       "AllowedValues": [
         "Average",
@@ -47216,13 +47299,19 @@
         "Sum"
       ]
     },
+    "AWS::CloudWatch::Alarm.ThresholdMetricId": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
     "AWS::CloudWatch::Alarm.TreatMissingData": {
       "AllowedValues": [
         "breaching",
         "ignore",
         "missing",
         "notBreaching"
-      ]
+      ],
+      "StringMax": 255,
+      "StringMin": 1
     },
     "AWS::CloudWatch::Alarm.Unit": {
       "AllowedValues": [
@@ -49564,7 +49653,9 @@
       "AllowedValues": [
         "standard",
         "io1",
+        "io2",
         "gp2",
+        "gp3",
         "sc1",
         "st1"
       ]
@@ -52827,6 +52918,53 @@
     "AWS::SageMaker::DeviceFleet.Tag.Key": {
       "StringMax": 128,
       "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.DataCatalogConfig.Catalog": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.DataCatalogConfig.Database": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.DataCatalogConfig.TableName": {
+      "StringMax": 255,
+      "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.EventTimeFeatureName": {
+      "AllowedPatternRegex": "^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}",
+      "StringMax": 64,
+      "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.FeatureDefinition.FeatureName": {
+      "AllowedPatternRegex": "^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}",
+      "StringMax": 64,
+      "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.FeatureDefinition.FeatureType": {
+      "AllowedValues": [
+        "Integral",
+        "Fractional",
+        "String"
+      ]
+    },
+    "AWS::SageMaker::FeatureGroup.FeatureGroupName": {
+      "AllowedPatternRegex": "^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}",
+      "StringMax": 64,
+      "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.RecordIdentifierFeatureName": {
+      "AllowedPatternRegex": "^[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}",
+      "StringMax": 64,
+      "StringMin": 1
+    },
+    "AWS::SageMaker::FeatureGroup.RoleArn": {
+      "AllowedPatternRegex": "^arn:aws[a-z\\-]*:iam::\\d{12}:role/?[a-zA-Z_0-9+=,.@\\-_/]+$",
+      "StringMax": 2048,
+      "StringMin": 20
+    },
+    "AWS::SageMaker::FeatureGroup.S3StorageConfig.S3Uri": {
+      "AllowedPatternRegex": "^(https|s3)://([^/]+)/?(.*)$"
     },
     "AWS::SageMaker::ModelBiasJobDefinition.ClusterConfig.InstanceCount": {
       "NumberMax": 100,
