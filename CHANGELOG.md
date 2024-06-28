@@ -1,3 +1,11 @@
+### v1.5.0
+## What's Changed
+* Update mappings to support transforms at the root level by @kddejong in https://github.com/aws-cloudformation/cfn-lint/pull/3439
+* Update `CfnLintJsonSchema` based rules for dynamic references by @kddejong in https://github.com/aws-cloudformation/cfn-lint/pull/3442
+* Update CloudFormation schemas to 2024-06-28 by @github-actions in https://github.com/aws-cloudformation/cfn-lint/pull/3407
+
+**Full Changelog**: https://github.com/aws-cloudformation/cfn-lint/compare/v1.4.2...v1.5.0
+
 ### v1.4.2
 ## What's Changed
 * Fix JSON based tags for many types by @kddejong in https://github.com/aws-cloudformation/cfn-lint/pull/3437
