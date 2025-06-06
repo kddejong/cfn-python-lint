@@ -1,0 +1,94 @@
+name: "[CI] Validate Pyinstaller Build"
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  #build-for-linux:
+  #  name: build-pyinstaller-linux
+  #  runs-on: ubuntu-latest
+  #  if: github.repository_owner == 'aws-cloudformation'
+  #  strategy:
+  #    fail-fast: false
+  #  steps:
+  #    - uses: actions/checkout@v4
+  #    - name: Make installer script executable
+  #      run: chmod +x ./installer/pyinstaller/build-linux.sh
+  #    - name: Build PyInstaller in manylinux container
+  #      run: |
+  #        docker run --rm -v .:/cfnlint -w /cfnlint -e \
+  #        quay.io/pypa/manylinux2014_x86_64:latest /cfnlint/scripts/installer/build-linux.sh aws-sam-cli-linux-x86_64.zip
+  #    - uses: actions/setup-python@v5
+  #      with:
+  #        python-version: 3.11
+  #    - name: Basic tests for PyInstaller
+  #      run: |
+  #        unzip .build/output/aws-sam-cli-linux-x86_64.zip -d sam-installation
+  #        sudo ./sam-installation/install
+  #        sam-beta --version
+  #        ./tests/sanity-check.sh
+  #    - uses: actions/upload-artifact@v4
+  #      with:
+  #        name: pyinstaller-linux-zip
+  #        path: .build/output/aws-sam-cli-linux-x86_64.zip
+  #        retention-days: 15
+
+  build-and-validate:
+    strategy:
+      matrix:
+        os: [linux-latest]
+    name: build-pyinstaller-${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    if: github.repository_owner == 'kddejong'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build PyInstaller
+        run: |
+          ./scripts/installer/build.sh
+      - name: Basic tests for PyInstaller
+        env:
+          SAM_INIT_RUNTIME: "python3.11"
+        run: |
+          unzip build/output/cfn-lint.zip -d cfnlint-installation
+          ./cfnlint-installation/cfn-lint --version
+          ./tests/sanity-check.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pyinstaller-${{ matrix.os }}-zip
+          path: build/output/cfn-lint.zip
+          retention-days: 15
+
+  #build-for-windows:
+  #  name: build-pyinstaller-linux
+  #  runs-on: ubuntu-latest
+  #  if: github.repository_owner == 'aws-cloudformation'
+  #  strategy:
+  #    fail-fast: false
+  #  steps:
+  #    - uses: actions/checkout@v4
+  #    - name: Make installer script executable
+  #      run: chmod +x ./installer/pyinstaller/build-linux.sh
+  #    - name: Build PyInstaller in manylinux container
+  #      run: |
+  #        docker run --rm -v .:/samcli -w /samcli -e CI_OVERRIDE='1' \
+  #        quay.io/pypa/manylinux2014_x86_64:latest /samcli/installer/pyinstaller/build-linux.sh aws-sam-cli-linux-x86_64.zip
+  #    - uses: actions/setup-python@v5
+  #      with:
+  #        python-version: 3.11
+  #    - name: Basic tests for PyInstaller
+  #      run: |
+  #        unzip .build/output/aws-sam-cli-linux-x86_64.zip -d sam-installation
+  #        sudo ./sam-installation/install
+  #        sam-beta --version
+  #        ./tests/sanity-check.sh
+  #    - uses: actions/upload-artifact@v4
+  #      with:
+  #        name: pyinstaller-linux-zip
+  #        path: .build/output/aws-sam-cli-linux-x86_64.zip
+  #        retention-days: 15
