@@ -80,15 +80,27 @@ class Condition:
     def evolve(self, status: bool | None) -> "Condition":
         cls = self.__class__
 
+        # If status is unchanged, return self to avoid creating a new object
+        if self.status == status:
+            return self
+
         if self.status is not None:
             if status != self.status:
                 raise ValueError(f"Resetting status to {status} from {self.status}")
 
-        return cls(
+        # Create new condition with same instance and cnf
+        result = cls(
             instance=self.instance,
             status=status,
             cnf=self.cnf,
+            fn_equals=self.fn_equals,
+            condition=self.condition,
         )
+
+        # Reuse the existing hash instead of recomputing it
+        object.__setattr__(result, "hash", self.hash)
+
+        return result
 
     @property
     def is_region(self) -> bool:

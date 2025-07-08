@@ -39,10 +39,20 @@ class Conditions:
         self._init_rules(cfn=cfn)
         self._cnf, self._solver_params = self._build_cnf(list(self._conditions.keys()))
 
-    def _init_conditions(self, cfn):
+    def _init_conditions(self, cfn: Any) -> None:
+        """Initialize conditions from the CloudFormation template
+
+        This method processes the Conditions section of a CloudFormation template
+        and creates ConditionNamed objects for each condition. If a condition is
+        malformed or causes an exception, it logs the error but doesn't add the
+        condition to the _conditions dictionary.
+
+        Args:
+            cfn: The CloudFormation template object
+        """
         conditions = cfn.template.get("Conditions")
         if isinstance(conditions, dict):
-            for k, _ in conditions.items():
+            for k, v in conditions.items():
                 try:
                     self._conditions[k] = ConditionNamed(k, conditions)
                 except ValueError as e:
@@ -229,7 +239,11 @@ class Conditions:
                     )
                     conditions_set[condition_name] = False
                     continue
-            condition_names.append(condition_name)
+                condition_names.append(condition_name)
+
+        # If no valid condition names, return early
+        if not condition_names:
+            return
 
         try:
             # build a large matric of True/False options
@@ -247,18 +261,19 @@ class Conditions:
                 cnf = c_cnf.copy()
                 params = dict(zip(condition_names, p))
                 for condition_name, opt in params.items():
-                    if opt:
-                        cnf.add_prop(
-                            self._conditions[condition_name].build_true_cnf(
-                                self._solver_params
+                    if condition_name in self._conditions:  # Check if condition exists
+                        if opt:
+                            cnf.add_prop(
+                                self._conditions[condition_name].build_true_cnf(
+                                    self._solver_params
+                                )
                             )
-                        )
-                    else:
-                        cnf.add_prop(
-                            self._conditions[condition_name].build_false_cnf(
-                                self._solver_params
+                        else:
+                            cnf.add_prop(
+                                self._conditions[condition_name].build_false_cnf(
+                                    self._solver_params
+                                )
                             )
-                        )
 
                 # if the scenario can be satisfied then return it
                 if satisfiable(cnf):
@@ -378,6 +393,24 @@ class Conditions:
             results.append(False)
 
         return results
+
+    def check_rule_conditions(
+        self, conditions: dict[str, bool], parameter_values: dict[str, str]
+    ) -> bool:
+        """Check if rule conditions are satisfied with given parameter values
+
+        Args:
+            conditions (dict[str, bool]): A dictionary of condition names and their expected values
+            parameter_values (dict[str, str]): A dictionary of parameter names and their values
+
+        Returns:
+            bool: True if the conditions are satisfied with the given parameter values
+        """
+        try:
+            return self.satisfiable(conditions, parameter_values)
+        except UnknownSatisfisfaction:
+            # If we can't determine satisfaction, assume it's satisfied
+            return True
 
     def satisfiable(
         self, conditions: dict[str, bool], parameter_values: dict[str, str]
