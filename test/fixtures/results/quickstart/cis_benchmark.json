@@ -30,6 +30,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "1305b160-5fe8-0130-9b18-7db39db1ea38",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 176
+            },
+            "Path": [
+                "Resources",
+                "FunctiontForEvaluateCisBenchmarkingPreconditions",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 176
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "3891b664-e01f-0ad7-5437-4ac9f5e53056",
         "Level": "Warning",
         "Location": {
@@ -83,6 +112,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "e71c4040-f361-467b-1797-be10ffe1915a",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 309
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluateRootAccountRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 309
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -144,6 +202,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "47bbf78c-001a-16ab-3dbe-6f4aa700fc96",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 481
+            },
+            "Path": [
+                "Resources",
+                "FunctionForVpcFlowLogRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 481
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "7e60ce0a-dd32-349a-c0dd-f97d3e18b82e",
         "Level": "Warning",
         "Location": {
@@ -197,6 +284,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "55cb6dbe-f942-98eb-51d4-cde8150fc315",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 551
+            },
+            "Path": [
+                "Resources",
+                "FunctionForVpcDefaultSecurityGroupsRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 551
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -316,6 +432,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "4f9fa4eb-74ca-47a5-73ab-5c590db35557",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 666
+            },
+            "Path": [
+                "Resources",
+                "FunctionForRoleForMfaOnUsersRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 666
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "82e72252-8ebe-ba6b-c7fd-d85aad75bac2",
         "Level": "Warning",
         "Location": {
@@ -369,6 +514,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "15178887-f03d-6da6-4b2f-497fd51238b9",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 760
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluatePolicyPermissionsRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 760
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -459,6 +633,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "0709c14b-38cb-f2d8-03b9-10218c7eff3e",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 850
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluateUserPolicyAssociationRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 850
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "e60469c7-c230-7901-ef33-e3bebf512f57",
         "Level": "Warning",
         "Location": {
@@ -541,6 +744,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "065293d2-ecdf-24cf-0853-bff9d464d613",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 966
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluateCloudTrailRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 966
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -631,6 +863,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "768dbeb5-5787-3d64-7c68-2882adb2ba89",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1082
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluateCloudTrailBucketRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1082
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "7e666045-a2fb-2b7a-a2dc-01f4d35acc6a",
         "Level": "Warning",
         "Location": {
@@ -713,6 +974,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "9b422aa1-74a1-d906-55bc-d689825ff22b",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1178
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluateCloudTrailLogIntegrityRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1178
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -803,6 +1093,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "6b1e5fe1-f159-b81f-7123-e353fa368983",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1260
+            },
+            "Path": [
+                "Resources",
+                "FunctionForInstanceRoleUseRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1260
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "89a5d94a-8004-af05-5a5c-0d98d97b70da",
         "Level": "Warning",
         "Location": {
@@ -885,6 +1204,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "2148771e-0127-9b41-ad43-577bccdcfc8d",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1357
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluateKeyRotationRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1357
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -975,6 +1323,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "9c8c4bf7-4393-ffb7-f6d8-d4f01e2b6142",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1465
+            },
+            "Path": [
+                "Resources",
+                "FunctionForEvaluateConfigInAllRegionsRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1465
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "62076221-d56b-28c5-76e7-31b1567a4c55",
         "Level": "Warning",
         "Location": {
@@ -1028,6 +1405,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "f103278f-2282-3623-1820-a3bef2e3346e",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1550
+            },
+            "Path": [
+                "Resources",
+                "FunctionForVpcPeeringRouteTablesRule",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1550
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -1113,6 +1519,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "652e37b9-1bae-1810-daf4-2195e6a1849a",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1633
+            },
+            "Path": [
+                "Resources",
+                "GetCloudTrailCloudWatchLog",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1633
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
@@ -1531,6 +1966,35 @@
     },
     {
         "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "96ec5d17-b5cf-5eee-28ce-728eddbd3272",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 1889
+            },
+            "Path": [
+                "Resources",
+                "FunctionToFormatCloudWatchEvent",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 1889
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
         "Id": "eed64bb5-828a-92d6-c415-3d66b8d09dc6",
         "Level": "Warning",
         "Location": {
@@ -1644,6 +2108,35 @@
             "Id": "W3005",
             "ShortDescription": "Check obsolete DependsOn configuration for Resources",
             "Source": "https://aws.amazon.com/blogs/devops/optimize-aws-cloudformation-templates/"
+        }
+    },
+    {
+        "Filename": "test/fixtures/templates/quickstart/cis_benchmark.yaml",
+        "Id": "cb4f9d56-628a-4627-25db-8aaa3e640356",
+        "Level": "Error",
+        "Location": {
+            "End": {
+                "ColumnNumber": 16,
+                "LineNumber": 2334
+            },
+            "Path": [
+                "Resources",
+                "FunctionToDisableUnusedCredentials",
+                "Properties",
+                "Runtime"
+            ],
+            "Start": {
+                "ColumnNumber": 9,
+                "LineNumber": 2334
+            }
+        },
+        "Message": "Runtime 'python3.8' was deprecated on '2024-10-14'. Creation was disabled on '2025-02-28' and update on '2025-03-31'. Please consider updating to 'python3.12'",
+        "ParentId": null,
+        "Rule": {
+            "Description": "Check if an EOL Lambda Runtime is specified and you cannot update the function",
+            "Id": "E2533",
+            "ShortDescription": "Check if Lambda Function Runtimes are updatable",
+            "Source": "https://docs.aws.amazon.com/lambda/latest/dg/runtime-support-policy.html"
         }
     },
     {
